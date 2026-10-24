@@ -104,7 +104,7 @@ S11 [flow]      The India–Singapore corridor — set up, operate, repatriate
 S12 [pillars]   Beyond compliance — M&A, valuation, payroll
 S13 [pillars]   The team behind the work — 30+, all in-house
 S14 [pillars]   Technology we build ourselves
-S15 [profile]   The partner — HK Vinay
+S15 [profile]   The partners — HK Vinay, Shabari, Akshay, Vagdev
 S16 [cta]       Next steps
 ```
 
@@ -175,10 +175,19 @@ secretarial. Closing band: 30+ people on one payroll, no sub-contracting.
 practice calendar rather than a sales pipeline; custom finance software where a
 client's process needs a tool that does not exist.
 
-**S15 [profile]** — HK Vinay, Managing Partner, with direct line and email. Only
-verifiable facts: name, role, contact, office. The one positioning line — that the
-partner who scopes an engagement is the partner who reviews it — is a promise, framed
-as such, not a biography.
+**S15 [profile]** — Four partners on the 4-up grid: HK Vinay (Managing Partner), then
+Shabari, Akshay and Vagdev. Statement first, people second — the pull quote leads, a
+hairline closes it, the partner row sits beneath, and a band carries the firm line.
+
+Each card is **role + name + a gold tick, and nothing else**. HK Vinay's role and
+qualification are published by the firm; the other three names arrived as first names
+only, with no designation, qualification or practice focus given. "Partner" is inferred
+from the slide this was asked for and is the only inference made — no surnames, no
+"Chartered Accountant", and no practice assignment has been invented, which matters
+because slide 13 advertises in-house legal and in-house engineering alongside the CAs,
+so a partner here is not necessarily a CA. The card is sized for exactly three
+elements, so there is no empty slot showing; adding a qualification line later means
+growing the cards by one line.
 
 **S16 [cta]** — Three steps: scoping call; written scope and fee before anything
 starts; transition with the first close run alongside the outgoing provider. Full
@@ -232,7 +241,7 @@ between cards 1 and 2 and leave the gap between 2 and 3 open.
 | 11→12 | Corridor visible at y=13.30 | Corridor **ghosts to x=36cm** — slides off the right edge | corridor (exit), rule, dot, navy tick, wash, orbs | `!!actor-corridor` → x=36cm |
 | 12→13 | 3-up | Wash widens to 14.4cm | rule, dot, navy tick, wash, orbs | — |
 | 13→14 | 2-up | Rule retracts to 16cm; wash narrows | rule, dot, navy tick, wash, orbs | — |
-| 14→15 | 3-up | Full bleed; wash to 11cm portrait panel | rule, dot, navy tick, wash, orbs | — |
+| 14→15 | 3-up | Full bleed; wash drops to the first partner card (6.84 × 3.70 at y=10.20) | rule, dot, navy tick, wash, orbs | — |
 | 15→16 | Profile | Rule retracts 30.07 → 20.0cm, holding the deck's rule line | rule, dot, navy tick, wash, orbs | — |
 
 Every pair moves **five to seven** named shapes, against a Gate 5b-morph-2 floor of

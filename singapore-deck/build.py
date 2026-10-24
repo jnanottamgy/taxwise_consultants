@@ -173,7 +173,7 @@ SCENE = {
  12: (( 1.90,  5.70, 22.00), (31.97,  6.40, 9.20), (24.00, 7.50,  9.50), ( 2.00,  2.50,  9.00), ( 1.90,  6.80,  9.42, 9.00)),
  13: (( 1.90,  5.70, 30.07), (16.93,  6.80, 7.90), ( 1.80, 2.00, 11.00), (23.00,  8.50,  9.50), ( 1.90,  6.80, 14.40, 3.60)),
  14: (( 1.90,  5.70, 16.00), (31.97,  7.20, 8.00), (22.00, 2.50, 11.50), ( 2.50,  9.00,  9.00), ( 1.90,  6.80,  9.42, 9.00)),
- 15: (( 1.90,  5.70, 30.07), (13.40,  6.90, 8.40), ( 3.00, 6.50, 12.00), (21.50,  2.00,  9.50), ( 1.90,  6.80, 11.00, 9.00)),
+ 15: (( 1.90,  5.70, 30.07), (31.97,  6.40, 3.00), ( 3.00, 6.50, 12.00), (21.50,  2.00,  9.50), ( 1.90, 10.20,  6.84, 3.70)),
  16: (( 1.90,  5.70, 20.00), (31.97, 14.30, 2.00), (21.00, 1.50, 12.00), ( 3.00,  8.00,  9.50), ( 1.90,  6.80,  9.42, 6.20)),
 }
 
@@ -531,30 +531,38 @@ def main():
         ops += card(14, i, lab, head, b, X3[i], 6.80, COL3, 9.00)
     batch(scene(14)); batch(ops + footer(14))
 
-    # --------------------------------------------------- 15 · the partner
+    # -------------------------------------------------- 15 · the partners
+    # Statement first, then the people: the pull quote leads, a hairline
+    # closes it, and the four partners sit on the 4-up grid beneath.
     batch(scene(15))
+    PW = COL4 - 2 * PAD
     ops = [
-        eyebrow(15, "sec", "The firm"), title(15, "The partner"),
-        eyebrow(15, "mp", "Managing partner", x=2.60, y=7.50, w=9.60),
-        txt(15, "name", "HK Vinay", 2.60, 8.40, 9.60, 1.60, pt=34,
-            color=PAPER, font=DISPLAY, bold=True, valign="middle"),
-        txt(15, "qual", "Chartered Accountant", 2.60, 10.25, 9.60, 0.95, pt=18, ls=1.15),
-        hairline(15, "pdiv", 2.60, 11.90, 9.60),
-        txt(15, "based", "Leads the practice from Bangalore.",
-            2.60, 12.40, 9.60, 1.80, pt=18, ls=1.15),
+        eyebrow(15, "sec", "The firm"), title(15, "The partners"),
         txt(15, "pull",
-            "Every engagement is scoped and reviewed by the partner, "
+            "Every engagement is scoped and reviewed by a partner, "
             "not handed to an account manager.",
-            13.90, 6.90, 18.07, 3.60, pt=24, color=PAPER, font=DISPLAY, ls=1.15),
+            M, 6.40, 26.00, 2.50, pt=24, color=PAPER, font=DISPLAY, ls=1.15),
+        hairline(15, "pdiv", M, 9.60, W - 2 * M),
     ]
-    for i, t in enumerate([
-        "More than ten years in practice.",
-        "More than 500 clients advised.",
-        "Offices in Bangalore and Chennai.",
+    for i, (role, name) in enumerate([
+        ("Managing partner", "HK Vinay"),
+        ("Partner", "Shabari"),
+        ("Partner", "Akshay"),
+        ("Partner", "Vagdev"),
     ]):
-        ry = 11.30 + i * 1.75
-        ops.append(hairline(15, "cdash%d" % i, 13.90, ry + 0.40, 0.90, color=GOLD, h=0.06))
-        ops.append(txt(15, "cred%d" % i, t, 15.30, ry, 16.67, 1.00, pt=18, ls=1.15))
+        px = X4[i]
+        if i:                                   # card 0 is !!scene-wash
+            ops.append(panel(15, "pcard%d" % i, px, 10.20, COL4, 3.70))
+        ops.append(eyebrow(15, "pr%d" % i, role, x=px + PAD, y=10.75, w=PW))
+        ops.append(txt(15, "pname%d" % i, name, px + PAD, 11.55, PW, 1.40,
+                       pt=26, color=PAPER, font=DISPLAY, bold=True))
+        ops.append(hairline(15, "ptick%d" % i, px + PAD, 13.25, 1.40, color=GOLD, h=0.06))
+    ops += [
+        panel(15, "band", M, 14.90, W - 2 * M, 1.40),
+        txt(15, "bandtxt",
+            "Ten years in practice  ·  500+ clients advised  ·  Bangalore and Chennai",
+            2.60, 14.90, 28.67, 1.40, pt=18, ls=1.15, valign="middle"),
+    ]
     batch(ops + footer(15))
 
     # ---------------------------------------------------- 16 · next steps
@@ -652,8 +660,9 @@ SPEAKER_NOTES = {
  14: "Unusual for a CA firm and worth dwelling on. Engineers on staff means the "
      "practice systems are built around a filing calendar rather than a sales "
      "pipeline, and it means we can build a client a tool when they need one.",
- 15: "Partner-led. The person who scopes the engagement is the person who reviews "
-     "it. Hand over to HK Vinay here if he is in the room.",
+ 15: "Partner-led, and say it plainly: the partner who scopes an engagement is the "
+     "one who reviews it. Four partners, so a Singapore client is never waiting on "
+     "one person's calendar. Hand over to whichever partner is in the room.",
  16: "Close on the three steps and leave the contact block up. The ask is a "
      "thirty-minute scoping call, nothing larger.",
 }
