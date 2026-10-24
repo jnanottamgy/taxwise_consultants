@@ -104,7 +104,7 @@ S11 [flow]      The India–Singapore corridor — set up, operate, repatriate
 S12 [pillars]   Beyond compliance — M&A, valuation, payroll
 S13 [pillars]   The team behind the work — 30+, all in-house
 S14 [pillars]   Technology we build ourselves
-S15 [profile]   The partners — HK Vinay, Shabari, Akshay, Vagdev
+S15 [profile]   The partners — Shabari, HK Vinay, Akshay, Vagdev
 S16 [cta]       Next steps
 ```
 
@@ -116,8 +116,9 @@ titles gives the argument.
 ## Section 3 — Page briefs
 
 **S2 [evidence]** — Objective: establish that this is an established practice, not a
-new venture. Four figures from the firm's own site: 10+ years, 500+ clients, 30+
-in-house, 50 Cr+ rupees in tax saved. Hierarchy: figure (44pt) → sublabel (12pt).
+new venture. Three figures from the firm's own site: 10+ years, 500+ clients, 30+
+in-house, on the 3-up grid. Hierarchy: figure (40pt) → sublabel (12pt). The tax-saved
+figure the site also carries was **withdrawn by HK Vinay** and is not in the deck.
 Transition: S1 names the firm, S2 proves it exists at scale.
 
 **S3 [pillars] ★** — The three practices as published on twchartered.com: Core CA
@@ -175,8 +176,8 @@ secretarial. Closing band: 30+ people on one payroll, no sub-contracting.
 practice calendar rather than a sales pipeline; custom finance software where a
 client's process needs a tool that does not exist.
 
-**S15 [profile]** — Four partners on the 4-up grid: HK Vinay (Managing Partner), then
-Shabari, Akshay and Vagdev. Statement first, people second — the pull quote leads, a
+**S15 [profile]** — Four partners on the 4-up grid, in the order HK Vinay asked for:
+Shabari, then HK Vinay (Managing Partner), Akshay and Vagdev. Statement first, people second — the pull quote leads, a
 hairline closes it, the partner row sits beneath, and a band carries the firm line.
 
 Each card is **role + name + a gold tick, and nothing else**. HK Vinay's role and
@@ -267,7 +268,7 @@ the deck is `!!actor-corridor`, which genuinely needs a visible exit.
 
 Facts taken from the firm's own published material (`index.html`, twchartered.com):
 office address, both phone numbers, both email addresses, 10+ years, 500+ clients,
-50 Cr+ in tax saved, 100% compliance record, the three practice lines, HK Vinay as
+100% compliance record, the three practice lines, HK Vinay as
 Managing Partner.
 
 Claims supplied by the client in the brief and reproduced as their positioning:
@@ -281,3 +282,20 @@ Nothing in this deck asserts a Singapore market statistic. Every regulatory refe
 SPICe+, FC-GPR, FEMA, ODI, DTAA, Rule 11UA, PF, ESI, professional tax, TDS — is a real
 named obligation. No rates and no filing deadlines are printed, so the deck does not go
 stale when thresholds move.
+
+
+---
+
+## Section 6 — Change log
+
+**24 Oct 2026, from HK Vinay.** Three amendments, all applied:
+
+1. **The tax-saved figure is withdrawn.** It was the fourth KPI on slide 2 and is
+   gone; the band re-grids from 4-up to 3-up. Note the figure is **still published on
+   twchartered.com**, so the site and the deck now disagree.
+2. **Partner order is Shabari, HK Vinay, Akshay, Vagdev** — the Managing Partner sits
+   second by his own instruction, not first.
+3. **HK Vinay's address is now `cahkv@twchartered.com`** on slide 16. The site still
+   lists the old address, so that is a second site/deck divergence. The shorter string
+   also let the contact block move onto the deck's own 3-up grid, aligned with the
+   three cards above it.

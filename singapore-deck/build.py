@@ -313,9 +313,8 @@ def main():
     ops = []
     for i, (fig, sub) in enumerate([("10+", "Years in practice"),
                                     ("500+", "Clients advised"),
-                                    ("30+", "In-house specialists"),
-                                    ("50 Cr+", "Rupees saved in tax")]):
-        kx, kw = X4[i] + PAD, COL4 - PAD
+                                    ("30+", "In-house specialists")]):
+        kx, kw = X3[i] + PAD, COL3 - PAD
         ops.append(txt(2, "kpi%d" % i, fig, kx, 13.20, kw, 1.75, pt=40,
                        color=GOLD, font=DISPLAY, bold=True, valign="middle"))
         ops.append(txt(2, "kpisub%d" % i, sub, kx, 15.15, kw, 0.70, pt=12, spacing=0.8))
@@ -545,8 +544,8 @@ def main():
         hairline(15, "pdiv", M, 9.60, W - 2 * M),
     ]
     for i, (role, name) in enumerate([
-        ("Managing partner", "HK Vinay"),
         ("Partner", "Shabari"),
+        ("Managing partner", "HK Vinay"),
         ("Partner", "Akshay"),
         ("Partner", "Vagdev"),
     ]):
@@ -575,14 +574,13 @@ def main():
     ]):
         ops += card(16, i, lab, head, b, X3[i], 6.80, COL3, 6.20, headpt=20)
     ops.append(hairline(16, "ctdiv", M, 13.70, W - 2 * M))
-    cx = [(M, 7.50), (10.20, 7.50), (18.60, 13.37)]
     for i, (lab, body_t) in enumerate([
         ("Offices", "Bangalore · Chennai"),
         ("Telephone", "+91 9590360434\n+91 9740540239"),
-        ("Email", "cavinaykarlagere@twchartered.com\ntwchartered.com"),
+        ("Email", "cahkv@twchartered.com\ntwchartered.com"),
     ]):
-        ops.append(eyebrow(16, "ct%d" % i, lab, x=cx[i][0], y=14.15, w=cx[i][1]))
-        ops.append(txt(16, "contact%d" % i, body_t, cx[i][0], 14.90, cx[i][1], 1.60,
+        ops.append(eyebrow(16, "ct%d" % i, lab, x=X3[i], y=14.15, w=COL3))
+        ops.append(txt(16, "contact%d" % i, body_t, X3[i], 14.90, COL3, 1.60,
                        pt=15, ls=1.15))
     batch(ops + footer(16))
 
@@ -627,7 +625,7 @@ def main():
 SPEAKER_NOTES = {
  2: "Open by establishing that this is an established practice, not a new venture. "
     "Ten years, 500 clients, 30 people in-house. Chennai is the second office. "
-    "Do not rush the four figures — let them land before moving on.",
+    "Do not rush the three figures — let them land before moving on.",
  3: "These are the three practice lines as published on the website. The point to "
     "land is that they are not separate products: one team does the recurring "
     "compliance, the management reporting and the transaction work.",
