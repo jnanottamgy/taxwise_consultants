@@ -174,7 +174,7 @@ SCENE = {
  13: (( 1.90,  5.70, 30.07), (16.93,  6.80, 7.90), ( 1.80, 2.00, 11.00), (23.00,  8.50,  9.50), ( 1.90,  6.80, 14.40, 3.60)),
  14: (( 1.90,  5.70, 16.00), (31.97,  7.20, 8.00), (22.00, 2.50, 11.50), ( 2.50,  9.00,  9.00), ( 1.90,  6.80,  9.42, 9.00)),
  15: (( 1.90,  5.70, 30.07), (31.97,  6.40, 3.00), ( 3.00, 6.50, 12.00), (21.50,  2.00,  9.50), ( 1.90, 10.20,  6.84, 3.70)),
- 16: (( 1.90,  5.70, 20.00), (31.97, 14.30, 2.00), (21.00, 1.50, 12.00), ( 3.00,  8.00,  9.50), ( 1.90,  6.80,  9.42, 6.20)),
+ 16: (( 1.90,  5.70, 20.00), (31.97, 13.90, 2.40), (21.00, 1.50, 12.00), ( 3.00,  8.00,  9.50), ( 1.90,  6.80,  9.42, 5.90)),
 }
 
 DIVIDERS = {4, 7, 10}
@@ -572,15 +572,15 @@ def main():
         ("02", "Scope and fee in writing", "What we run, and what it costs."),
         ("03", "Transition", "We run the first close alongside yours."),
     ]):
-        ops += card(16, i, lab, head, b, X3[i], 6.80, COL3, 6.20, headpt=20)
-    ops.append(hairline(16, "ctdiv", M, 13.70, W - 2 * M))
+        ops += card(16, i, lab, head, b, X3[i], 6.80, COL3, 5.90, headpt=20)
+    ops.append(hairline(16, "ctdiv", M, 13.25, W - 2 * M))
     for i, (lab, body_t) in enumerate([
         ("Offices", "Bangalore · Chennai"),
-        ("Telephone", "+91 9590360434\n+91 9740540239"),
+        ("Telephone", "+91 9590360434\n+91 9740540239\n+65 84083838"),
         ("Email", "cahkv@twchartered.com\ntwchartered.com"),
     ]):
-        ops.append(eyebrow(16, "ct%d" % i, lab, x=X3[i], y=14.15, w=COL3))
-        ops.append(txt(16, "contact%d" % i, body_t, X3[i], 14.90, COL3, 1.60,
+        ops.append(eyebrow(16, "ct%d" % i, lab, x=X3[i], y=13.70, w=COL3))
+        ops.append(txt(16, "contact%d" % i, body_t, X3[i], 14.50, COL3, 2.25,
                        pt=15, ls=1.15))
     batch(ops + footer(16))
 
